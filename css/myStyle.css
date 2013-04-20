@@ -1,0 +1,48 @@
+@CHARSET "UTF-8";
+
+body{
+	font-size: 12px;
+        font-family: monospace;
+}
+label, legend{
+    font-weight: bold;
+}
+
+#btnFix{
+    position:fixed;
+    bottom: 30px;
+    left: 400px;
+    padding:5px; 
+
+}
+#dialog-form{ width: 600px;}
+input[type="text"] { margin: 5px; width:250px; padding: 5px; }
+textarea{ resize: none ;width:250px;}
+select { margin: 5px; width:250px; padding: 5px;  }
+
+fieldset#DataSet{
+	/* width: 500px; */
+	padding:0; border:0; margin-top:25px;
+}
+
+#formMain{
+	padding: 5px;
+	margin: 5px;
+}
+
+a{
+	color: #000fff;
+	text-decoration: none;
+ 	font-weight: bold;
+}
+
+a:hover{
+	text-decoration: underline;
+	
+}
+
+#showResult{
+	font-size: 18px;
+}
+
+
