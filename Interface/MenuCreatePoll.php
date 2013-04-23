@@ -1,17 +1,52 @@
 <?php
 require_once '../Controller/Config.php';
-/*include '../Controller/ConnectFB.php'; */
-?>
-<META HTTP-EQUIV="Content-Type" CONTENT="text/html;charset=UTF-8">
-<title>Create Poll</title>
+include '../Controller/ConnectFB.php';
+?> 
+<!DOCTYPE html>
+<html>
+<script type="text/javascript" src="../js/jquery.fixedMenu.js"></script>
+<link rel="stylesheet" type="text/css" href="../css/fixedMenu_style2.css" />
+
 <link rel="stylesheet" href="../jquery/css/start/jquery-ui-1.10.1.custom.css" type="text/css" />
 <link rel="stylesheet" href="../css/myStyle.css" type="text/css" />
 <script language="JavaScript" src="../jquery/js/jquery-1.9.1.js" type="text/javascript"></script>
 <script language="JavaScript" src="../jquery/js/jquery-ui-1.10.1.custom.js" type="text/javascript"></script>
 <script language="JavaScript" src="../js/CustomForm.js" type="text/javascript"></script>
 
-<!-- Form Dialog -->
-<div id="dialog-form" title="" class="div ui-widget-content ui-corner-all">
+  
+<table border="0" width="760px">
+  <tr>
+    <td colspan="2">
+        <div class="menu">
+        <ul>
+            <li>
+                <a href="../Interface/MenuHome.php">Home</a>
+            </li>
+
+            <li>
+                <a href="../Interface/MenuCreatePoll.php">Create Poll</a>
+            </li>
+
+            <li>
+                <a href="../Interface/MenuAnswer.php">Answer Poll</a>
+            </li>
+            
+            <li>
+                <a href="../Interface/About.php">About</a>
+            </li>
+            
+            <li>
+                <a href="../Interface/Contact.php">Contact</a>
+            </li>
+
+        </ul>
+    </div>
+    </td>
+  </tr>
+  <tr>
+    <td width="260px" align="center" valign="top">History</td>
+    <td>
+       <div id="dialog-form" title="" class="div ui-widget-content ui-corner-all">
   
   
   <form id="formMain" name="formMain" method="POST" action="../Controller/SavePollAction.php">
@@ -102,6 +137,7 @@ require_once '../Controller/Config.php';
     <!--<span id="showResult"></span>-->
     <button name="btnAddQuestion" id="btnAddQuestion">เพิ่มคำถาม</button><button name="btn" id="btnSave">บันทึกข้อมูล</button>
 </div>
-<!-- End Form Dialog -->
-
-
+    </td>
+  </tr>
+</table>
+</html>

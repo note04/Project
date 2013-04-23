@@ -1,0 +1,8 @@
+# URL rewriting module activation
+RewriteEngine On
+#Rewrite rule
+RewriteBase /project/
+
+
+
+#ErrorDocument 404 /web_page/404.php

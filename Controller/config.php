@@ -12,7 +12,7 @@ $db_name = "palisorg_QTN";*/
 
 $db_host = "localhost";
 $db_username = "root";
-$db_pass = "";
+$db_pass = "password";
 $db_name = "questionnaire_db";
 
 $link = mysql_connect("$db_host","$db_username","$db_pass") or die ("could not connect to mysql");

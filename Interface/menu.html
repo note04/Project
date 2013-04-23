@@ -1,0 +1,39 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+    <head>
+        <script type="text/javascript" src="../js/jquery-1.4.2.min.js"></script>
+        <script type="text/javascript" src="../js/jquery.fixedMenu.js"></script>
+        <link rel="stylesheet" type="text/css" href="../css/fixedMenu_style2.css" />
+        <script>
+        $('document').ready(function(){
+            $('.menu').fixedMenu();
+        });
+        </script>
+    </head>
+    <body>
+    <div class="menu">
+        <ul>
+            <li>
+                <a href="../Interface/main.html" target="detial" onClick="window.parent.frames['menu'].document.location.href='../Interface/dummy.html';">Home</a>
+            </li>
+            
+            <li>
+                <a href="../View/createpoll.php" target="detial" onClick="window.parent.frames['menu'].document.location.href='../Interface/history.html';">Create Poll</a>
+            </li>
+            
+            <li>
+                <a href="../View/viewpoll.php" target="detial" onClick="window.parent.frames['menu'].document.location.href='../Interface/history.html';">Answer Poll</a>
+            </li>
+            
+            <li>
+                <a href="../Interface/About.html" target="detial" onClick="window.parent.frames['menu'].document.location.href='../Interface/dummy.html';">About</a>
+            </li>
+            
+            <li>
+                <a href="../Interface/Contact.html" target="detial" onClick="window.parent.frames['menu'].document.location.href='../Interface/dummy.html';">Contact</a>
+            </li>
+
+        </ul>
+    </div>
+    </body>
+</html>

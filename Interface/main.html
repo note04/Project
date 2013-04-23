@@ -1,0 +1,62 @@
+
+  <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.2/themes/smoothness/jquery-ui.css" />
+  <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+  <script src="http://code.jquery.com/ui/1.10.2/jquery-ui.js"></script>
+  <link rel="stylesheet" href="/resources/demos/style.css" />
+
+
+<table>
+  <tr>
+    <td><br /></td>
+    <td><br /></td>
+    <td><br /></td>
+  </tr>
+  <tr>
+    <td><br /></td>
+    <td align="center"><img src="../images/anigif.gif" width="240" height="288" alt="" /></td>
+    <td><br /></td>
+  </tr>
+  <tr>
+    <td><br /></td>
+    <td><font face="Arial Rounded MT Bold" size="7">QUESTIONNAIRES</font></td>
+    <td><br /></td>
+  </tr>
+  <tr>
+    <td><br /></td>
+    <td><br /></td>
+    <td><br /></td>
+  </tr>
+  <tr>
+    <td><br /></td>
+    <td align="center">
+                    <table>
+                  <tr>
+                    <td><a id="createpoll">Create Poll</a></td>
+                    <td></td>
+                    <td><a id="answerpoll">Answer Poll</a></td>
+                  </tr>
+                </table>
+</td>
+    <td><br /></td>
+  </tr>
+</table>
+<script>
+  $(function() {
+    $("#createpoll")
+      .button()
+      .click(function( event ) {
+        event.preventDefault();
+        window.parent.frames["menu"].document.location.href='../Interface/history.html';
+        window.parent.frames["detial"].document.location.href='../View/createpoll.php';
+      });
+      $("#answerpoll")
+      .button()
+      .click(function( event ) {
+        event.preventDefault();
+        window.parent.frames["menu"].document.location.href='../Interface/history.html';
+        window.parent.frames["detial"].document.location.href='../View/createpoll.php';
+      });
+
+  });
+
+  </script>
